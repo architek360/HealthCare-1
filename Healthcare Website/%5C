@@ -1,0 +1,59 @@
+<%@include file="sqlBasic.jsp"%>
+<%  
+	String username=request.getParameter("username");
+	String password=request.getParameter("password");
+	String btn= request.getParameter("type");
+	String nxt = "";	
+
+	if("cust".equals(btn)){
+		String sqlqueryCommand = "SELECT * from subscriber where login='" + username + "' and password='" + password + "'";
+    		Statement stmt = con.createStatement();
+	 	ResultSet results = stmt.executeQuery(sqlqueryCommand);
+
+		if(username != null && password != null){
+			while(results.next()){
+				nxt = results.getString("password");	
+				if(nxt.equals(password)){
+					session.setAttribute("username", username);
+					session.setAttribute("password", password);
+					response.sendRedirect("customer.jsp");
+				}else {
+					msg="Incorrect password or username";
+					session.setAttribute("msg", msg);
+					response.sendRedirect("error.jsp");
+				}
+			}
+		}else{
+			msg="Please fill in all filds";
+			session.setAttribute("msg", msg);
+			response.sendRedirect("error.jsp");
+		}	
+    	}else if ("comp".equals(btn)){
+		String sqlqueryCommand = "select * from company where login='" + username +"' and password='" + password + "'";
+    		Statement stmt = con.createStatement();
+ 		ResultSet results = stmt.executeQuery(sqlqueryCommand);
+		
+		if(username != null && password != null){
+			while(results.next()){
+				nxt = results.getString("password");
+				if(nxt.equals(password)){
+					session.setAttribute("username", username);
+					session.setAttribute("password", password);
+					response.sendRedirect("company.jsp");
+				}
+			}
+		}else {
+			msg="Incorrect password or username";
+			session.setAttribute("msg", msg);
+			response.sendRedirect("error.jsp");
+		}
+	}else {
+		msg="Please choose 'company' of 'customer'";
+			session.setAttribute("msg", msg);
+		response.sendRedirect("error.jsp");
+	}
+	
+	msg="incorrect pass";
+			session.setAttribute("msg", msg);
+	response.sendRedirect("error.jsp");
+%>

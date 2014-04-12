@@ -1,0 +1,108 @@
+body{
+	background-color:yellow;
+}
+
+#htm{
+	font-weight:bold;
+}
+
+#footer{
+	clear:both;
+	text-align:center;
+	margin-top:10%;
+}
+
+#addStuff{
+	border:1px solid black;
+	width:500px;
+	margin:0px auto;
+	text-align:center;
+	-webkit-border-radius:10px;
+	-webkit-box-shadow:rgba(110,110,110,0.3) 5px 5px 5px;
+}
+
+#header{
+	font-size:50px;
+	border:1px solid black;
+	color:green;
+	width:700px;
+	margin:0px auto;
+	text-align:center;
+	padding:10px;
+	-webkit-border-radius:10px;
+	-webkit-box-shadow:rgba(110,110,110,0.3) 5px 5px 5px;
+}
+
+#register{
+	border: 1px solid black;
+	width: 500px;
+	margin: 0px auto;	
+	text-align: center;
+	padding: 10px;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: rgba(110, 110, 110, 0.3) 5px 5px 5px;
+	text-shadow: rgb(110, 110, 110) 3px 3px 3px;
+}
+
+#login{
+	border: 1px solid black;
+	width: 500px;
+	margin: 0px auto;	
+	text-align: center;
+	padding: 10px;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: rgba(110, 110, 110, 0.3) 5px 5px 5px;
+	text-shadow: rgb(110, 110, 110) 3px 3px 3px;
+}
+
+#choice1{
+	font-size:50;
+	border: 1px solid black;
+	width: 200px;
+	margin: 0px auto;	
+	text-align: center;
+	padding: 20px;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: rgba(110, 110, 110, 0.3) 3px 3px 3px;
+	float:right;
+	margin-right:200px
+}	
+
+#choice2{
+	font-size:50;
+	border: 1px solid black;
+	width: 200px;
+	margin: 0px auto;	
+	text-align: center;
+	padding: 20px;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: rgba(110, 110, 110, 0.3) 3px 3px 3px;
+	float:left;
+	margin-left:200px
+}	
+
+#plans{
+	float:right;
+	margin-right: 50px;
+}
+
+#offerings{
+	float:left;
+	margin-left:50px;
+}
+
+#table1{
+	border: 1px solid black;
+	margin: 0px auto;	
+	padding: 20px;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: rgba(110, 110, 110, 0.3) 3px 3px 3px;
+	float:right;
+}
+#table2{
+	border: 1px solid black;
+	margin: 0px auto;	
+	padding: 20px;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: rgba(110, 110, 110, 0.3) 3px 3px 3px;
+}
